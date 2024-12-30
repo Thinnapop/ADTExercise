@@ -68,7 +68,7 @@ public class Exercise {
     public static void userInteraction(Vector<studentClass> students) {
         Scanner input = new Scanner(System.in);
         
-        System.out.print("Enter your command (-n, -f, -l, -s, -e): ");
+        System.out.print("Enter your command (-n, -f, -l, -s): ");
         String userInput = input.nextLine();
 
         StringTokenizer userInputs = new StringTokenizer(userInput.trim(), " ");
@@ -97,11 +97,7 @@ public class Exercise {
                     System.out.println("The name " + searchFN + " is either spelled incorrectly or not in the database.");
                 }
                 break;
-            case "-e":
-                System.out.println("Exiting Program!");
-                break;
-            default:
-                System.out.println("Invalid input! Please try again.");
+                default: System.out.println("Invalid input! Please try again.");
         }
     }
 
